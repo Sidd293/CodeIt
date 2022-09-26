@@ -1,5 +1,5 @@
 # Online Code Compiler - iNUERON TECH-A-THON @GBU
-
+The website is hosted over azure platform you can use this- <a href = "http://zerobugs.centralindia.cloudapp.azure.com:5000/">Click me</a>
 ## System Requirements
 
 Node,Mongodb,Docker
@@ -25,10 +25,6 @@ directories
 ![image](https://user-images.githubusercontent.com/61879840/192357392-21a940ca-24c1-4ea0-ac03-a85cbca399a9.png)
 this is the main architecture of the compiler service
 
-## Scalable architecture made using zeromq
-![image](https://user-images.githubusercontent.com/61879840/192357650-326c76e0-6741-43ad-9843-3d9752e7bc77.png)
-this is the architecture when we implement asynchronous message queuing service to distribute the comming requests
-
 ## The process
 
 1.Over the request of the user a UID is generated and 2 text files are created at the server being stdInput and code files.
@@ -42,6 +38,12 @@ this is the architecture when we implement asynchronous message queuing service 
 5.Now this log.txt is read and the output stream is stored and sent as a response. This doesn't complete here.
 
 6.Now the docker containers are stopped and deleted along with both input and code files.
+
+
+## Scalable architecture made using zeromq
+![image](https://user-images.githubusercontent.com/61879840/192357650-326c76e0-6741-43ad-9843-3d9752e7bc77.png)
+this is the architecture when we implement asynchronous message queuing service to distribute the comming requests
+
 
 
 
