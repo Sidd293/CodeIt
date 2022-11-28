@@ -5,6 +5,7 @@ Node,Mongodb,Docker,RAM >2GB
 ## Steps for setting up server
 1.open rec-src  <br/>
 2. run command <br/>
+>  cd rec-src \
 > npm i   <br/>
 > node index.js
  
@@ -12,7 +13,7 @@ Node,Mongodb,Docker,RAM >2GB
 
 ## Steps to run the worker 
 you can setup multiple workers by simply writing this command
->  cd rec-src
+
 >  node worker.js
 
 go to "localhost:5000/" to access the compiler.
