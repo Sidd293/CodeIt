@@ -1,8 +1,6 @@
-# Online Code Compiler - iNUERON TECH-A-THON @GBU
-The website is hosted over azure platform you can use this- <a href = "http://zerobugs.centralindia.cloudapp.azure.com:5000/">Click me</a>
 ## System Requirements
 
-Node,Mongodb,Docker
+Node,Mongodb,Docker,RAM >2GB
 
 ## Steps for setting up server
 1.open rec-src  <br/>
