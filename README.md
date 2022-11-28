@@ -12,6 +12,7 @@ Node,Mongodb,Docker,RAM >2GB
 
 ## Steps to run the worker 
 you can setup multiple workers by simply writing this command
+>  cd rec-src
 >  node worker.js
 
 go to "localhost:5000/" to access the compiler.
