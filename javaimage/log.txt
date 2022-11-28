@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\nishi\Dropbox\PC\Desktop\docker\file31.txt", line 5, in <module>
+    print(input(),"is my age")
+EOFError: EOF when reading a line

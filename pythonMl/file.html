@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p  id = "p" onmousedown='document.body.style.backgroundColor = "pink"' onmouseup='document.body.style.backgroundColor = "white"'>click</p>
+<form draggable="true" id = "frm" >
+<input id = "name" type= "text" name  ="name" >    
+<input type= "submit" value="submit" on ="val()">    
+
+</form>
+
+</body>
+<script>
+// function val(){
+//   x =  document.getElementById('name').value
+// if(x.length < 10)
+// alert("please enter number greater than 10");
+// }
+// document.getElementById('frm').addEventListener('submit',function(e){
+// e.preventDefault()
+// // document.write("e")
+// val = document.getElementById('name').value
+// // if(val.length < 10 )alert("number is less than size 10")
+
+// console.log(e);
+// })
+
+function convert(input)
+{
+ let obj = {}
+ let arrayCount = 1;
+    input.map(
+        (m)=>{
+            if(Array.isArray(m))
+                obj["array"+arrayCount++] = convert(m);
+            else obj[m] = m;
+           }
+    )
+    return obj;
+}
+
+input = [1,2,[4,5,6],7,8,[9,[2,[5,[6]]],0],11,12]
+// document.write(JSON.stringify(conv(input)));
+console.log(conv(input));
+    </script>
+</html>

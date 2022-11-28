@@ -1,0 +1,6 @@
+import sys 
+sys.stdin = open('input'+sys.argv[1]+'.txt', 'r')
+stdoutOrigin=sys.stdout
+sys.stdout = open("log.txt", "w")
+#write your code
+print("hello")
